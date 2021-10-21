@@ -1,14 +1,5 @@
 # Augment job information
 Given the list of jobs (title, description and seniority level),
-but some of the jobs are missing the seniority level.
-
-Write an application which fills in the gaps - restores the missing seniority level.
-
-Extra:
-
-1. Explain the choice of language / technology stack.
-2. Explain the choice of approach and algorithm.
-3. Estimate quality of the result.
 
 
 ## Problem Definition
@@ -183,7 +174,7 @@ with the sequence length, we have long sequences for descriptions but we are usi
 
 1. Clone the repository
     
-    git clone https://github.com/smartrecruiters-coding/ict-job-levels-kantharaju-narayanappa
+    git clone https://github.com/kantharajucn/job_seniority_prediction.git
 
 2. Install the requirements 
     
@@ -192,7 +183,7 @@ with the sequence length, we have long sequences for descriptions but we are usi
 3. Run the application
     
 
-    >export PYTHONPATH=~/ict-job-levels-kantharaju-narayanappa/src  
+    >export PYTHONPATH=~/job_seniority_prediction/src  
     > To Train  
     > >python3 main.py --model xgb_model --pre-processing tfidf  
     > To test  
@@ -201,16 +192,11 @@ with the sequence length, we have long sequences for descriptions but we are usi
     > >python3 main.py --tune  
 
 ## Extras:
-
-Explain the choice of language / technology stack.
+### Technology stack
     I am using Python language because Python has strong ecosystem for Datascience tools
     and also I have strong Python programming experience and I enjoy using Python.
 
-Explain the choice of approach and algorithm.
-Based on the size of the dataset, I chose models which performs well on the smaller datasets.
+### Algorithms used.
+Based on the size of the dataset, chose models which performs well on the smaller datasets.
 
-Estimate quality of the result.
-
-Quality of the results are good because of the dataset size. Results and more explanation is provided in the corresponding sections.
-
-Note: I haven't tested the Transformer models after I moved the models from the Jupyter notebook. But, they work fine if you run the notebook.
+### Note: I haven't tested the Transformer models after I moved the models from the Jupyter notebook. But, they work fine if you run the notebook.
